@@ -1,0 +1,6 @@
+always make a copy of reference value
+
+react data flow 
+This is commonly called a “top-down” or “unidirectional” data flow.
+
+form er last er dike ta abar practice korte hobe
