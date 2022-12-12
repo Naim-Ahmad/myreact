@@ -1,4 +1,5 @@
-import Clock from './components/Clock/Clock';
+// import Clock from './components/Clock/Clock';
+// import Clock2 from './components/Clock/Clock2';
 // import Comment from './components/Comment/Comment';
 // import Counter from './components/Counter';
 // import Toggle from './components/Toggle';
@@ -8,7 +9,7 @@ import Clock from './components/Clock/Clock';
 // import Warning from './components/Warning';
 // import Form from './components/Form';
 
-// import Calculator from './components/Temparature/Calculator';
+import Calculator from './components/Temparature/Calculator';
 
 // const commentObj = {
 //   name: 'HM Nayem',
@@ -27,7 +28,8 @@ function App() {
     <div>
       {/* <Welcome name="Nayeem" /> */}
       {/* <Comment name={name} comment={comment} date={date} url={url} /> */}
-      <Clock />
+      {/* <Clock /> */}
+      {/* <Clock2 />  */}
       {/* <Counter counter={0} increment={1} /> */}
       {/* <Toggle /> */}
       {/* <MailBox messages={libraries} /> */}
@@ -35,7 +37,7 @@ function App() {
       {/* <Warning /> */}
       {/* <Form /> */}
 
-      {/* <Calculator scale="c" /> */}
+      <Calculator/>
 
     {/* <Counter /> */}
     </div>

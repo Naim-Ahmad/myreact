@@ -1,3 +1,6 @@
+import React from "react";
+
+
 function BoilingVerdict({ temperature }) {
     if (temperature >= 100) {
         return <p>The water would boil</p>;
