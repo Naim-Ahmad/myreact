@@ -1,28 +1,11 @@
 // import Clock from './components/Clock/Clock';
-// import Clock2 from './components/Clock/Clock2';
-// import Comment from './components/Comment/Comment';
-// import Counter from './components/Counter';
-// import Toggle from './components/Toggle';
-// import Welcome from './components/Welcome';
-
-// import LoginControl from './components/Greeting/Greeting';
-// import Warning from './components/Warning';
-// import Form from './components/Form';
-
-import Calculator from './components/Temparature/Calculator';
 
 // const commentObj = {
-//   name: 'HM Nayem',
-//   comment: 'This Is a comment',
-//   date: new Date().toDateString(),
-//   url: 'https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50',
-// };
-// const {
-// name, comment, date, url, 
-// } = commentObj;
-// const libraries = ['React', 'Angular', 'Next.Js'];
+import ClickCounter from './components/HOC/ClickCounter';
 
 import React from 'react';
+import HoverCounter from './components/HOC/HoverCounter';
+// import SignupDialog from './components/composition/SingupDialog';
 function App() {
   return (
     <div>
@@ -36,10 +19,19 @@ function App() {
       {/* <LoginControl /> */}
       {/* <Warning /> */}
       {/* <Form /> */}
-
-      <Calculator/>
-
+      {/* <Calculator/> */}
     {/* <Counter /> */}
+    {/* <WelcomeDialog />
+    <Split/> */}
+    {/* <Text />
+    <Text1 /> */}
+    {/* <Emoji /> */}
+
+    {/* <SignupDialog /> */}
+
+    <ClickCounter />
+
+    <HoverCounter />
     </div>
   );
 }
