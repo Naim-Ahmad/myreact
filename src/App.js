@@ -1,63 +1,32 @@
-// import Clock from './components/Clock/Clock';
 
-// const commentObj = {
-// import ClickCounter from './components/HOC/ClickCounter';
+import React, { useState } from "react"
+import Button from "./Components/Button"
+import Title from "./Components/Title"
 
-import React from 'react';
-// import ClickCounter from './components/render props/ClickCounter';
-// import Counter from './components/render props/Counter';
-// import HoverCounter from './components/render props/HoverCounter';
-// import User from './components/render props/User';
-// import HoverCounter from './components/HOC/HoverCounter';
-// import SignupDialog from './components/composition/SingupDialog';
-import CounterContext from './components/Context API/CounterContext';
-import Service from './components/Context API/Service';
+function App(){
+  const [count1, setCount1] = useState(0)
+  const [count2, setCount2] = useState(0)
 
-class App extends React.Component {
-  state = {count: 0}
-
-  hoverHandler = ()=>{
-    this.setState((prev)=>({count: prev.count + 1}))
+  const handle1 = ()=>{
+    setCount1((prev)=> prev + 1)
   }
 
-  render(){
+  const handle2 = ()=>{
+    setCount2((prev)=> prev + 5)
+  }
+
   return (
     <div>
-      {/* <Welcome name="Nayeem" /> */}
-      {/* <Comment name={name} comment={comment} date={date} url={url} /> */}
-      {/* <Clock /> */}
-      {/* <Clock2 />  */}
-      {/* <Counter counter={0} increment={1} /> */}
-      {/* <Toggle /> */}
-      {/* <MailBox messages={libraries} /> */}
-      {/* <LoginControl /> */}
-      {/* <Warning /> */}
-      {/* <Form /> */}
-      {/* <Calculator/> */}
-    {/* <Counter /> */}
-    {/* <WelcomeDialog />
-    <Split/> */}
-    {/* <Text />
-    <Text1 /> */}
-    {/* <Emoji /> */}
-
-    {/* <SignupDialog /> */}
-
-    {/* <ClickCounter /> */}
-
-    {/* <HoverCounter /> */}
-    {/* <ClickCounter />
-    <HoverCounter /> */}
-    {/* <User /> */}
-
-    {/* <Counter render={(count, clickHandler)=> <ClickCounter count={count} clickHandler={clickHandler}/>} />
-    <Counter render={(count, hoverHandler)=> <HoverCounter count={count} hoverHandler={hoverHandler}/>}/> */}
-    <CounterContext.Provider value={{count: this.state.count, hoverHandler: this.hoverHandler}}><Service/></CounterContext.Provider>
-
+      <Title />
+      <Button handle1={handle1} title={`Counter 1 is: ${count1}`}>
+        Increment Number by one
+      </Button>
+      <hr />
+      <Button handle1={handle2} title={`Counter 2 is: ${count2}`}>
+        Increment Number by five
+      </Button>
     </div>
-
-  );
-  }
+  )
 }
 
-export default App;
+export default App
