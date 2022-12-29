@@ -15,9 +15,18 @@ function App(){
     setCount2((prev)=> prev + 5)
   }
 
+  // const isOdd = useMemo(()=>{
+  //   let i = 0
+  //   while(i < 1000000000){
+  //     i++
+  //   }
+  //   return count1 % 2 === 0
+  // },[count1])
+
   return (
     <div>
       <Title />
+        {/* <span>{isOdd ? 'Event': 'Odd'}</span> */}
       <Button handle1={handle1} title={`Counter 1 is: ${count1}`}>
         Increment Number by one
       </Button>
